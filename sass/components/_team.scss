@@ -1,0 +1,67 @@
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__card {
+    width: 270px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-card-wrapper {
+    padding: 30px 0;
+}
+
+.team-card-wrapper__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-card-wrapper__text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--secondary-text-color);
+}
+
+.team-card-wrapper__social-networks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-card-wrapper__social-network>.team-card-wrapper__network-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #AFB1B8;
+    transition: color 250ms var(--transition-timing-function), background-color 250ms var(--transition-timing-function);
+}
+
+.team-card-wrapper__network-link:hover,
+.team-card-wrapper__network-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primery-white-color);
+}
+
+.team-card-wrapper__network-icon {
+    fill: currentColor;
+}

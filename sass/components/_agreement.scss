@@ -1,0 +1,19 @@
+.agreement {
+    position: relative;
+}
+
+.agreement__label {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.agreement__label-link {
+    text-decoration-line: underline;
+    color: var(--accent-color);
+    margin-left: 4px;
+}
