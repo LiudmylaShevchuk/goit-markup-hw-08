@@ -19,7 +19,7 @@
             cursor: pointer;
             color: var(--primery-text-color);
             background-color: var(--secondary-background-color);
-            transition: color 250ms var(--transition-timing-function), background-color 250ms var(--transition-timing-function);
+            @include transition-color;
         }
     
         &__button:hover,

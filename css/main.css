@@ -72,12 +72,12 @@ img {
 .header__nav-link {
   color: var(--primery-text-color);
   display: block;
+  padding: 30px 0;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 30px 0;
   -webkit-transition: color 250ms var(--transition-timing-function);
   transition: color 250ms var(--transition-timing-function);
 }
@@ -283,20 +283,20 @@ img {
   fill: currentColor;
 }
 
-.clients__list__logo {
+.clients__logo {
   width: calc((100% - 30px) / 6);
 }
-.clients__list__link {
+.clients__link {
   width: 100%;
   height: 92px;
   border: 1px solid #AFB1B8;
   color: #AFB1B8;
   border-radius: 4px;
 }
-.clients__list__icon {
+.clients__icon {
   fill: currentColor;
 }
-.clients__list__link:hover, .clients__list__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -711,7 +711,7 @@ img {
   margin: 0 auto;
 }
 
-.header__nav, .header__nav-menu, .contacts, .contacts__item-link, .features__box-header, .examples__cards, .team-card-wrapper__social-networks, .team-card-wrapper__social-network > .team-card-wrapper__network-link, .clients__list__link, .close-button, .agreement__label, .checkbox__accept, .portfolio-filter, .sign-up__input {
+.header__nav, .header__nav-menu, .contacts, .contacts__item-link, .features__box-header, .examples__cards, .team-card-wrapper__social-networks, .team-card-wrapper__social-network > .team-card-wrapper__network-link, .clients__list, .clients__link, .close-button, .agreement__label, .checkbox__accept, .portfolio-filter, .sign-up__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -720,7 +720,7 @@ img {
           align-items: center;
 }
 
-.clients__list__link, .close-button, .agreement__label, .checkbox__accept, .portfolio-filter, .sign-up__form {
+.clients__list, .clients__link, .close-button, .agreement__label, .checkbox__accept, .portfolio-filter, .sign-up__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,7 +745,7 @@ img {
   text-decoration: none;
 }
 
-.clients__list__link {
+.clients__link {
   -webkit-transition: color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
   transition: color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
 }

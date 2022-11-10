@@ -22,7 +22,7 @@
             font-size: 14px;
             line-height: 1.7;
             color: var(--primery-white-color);
-            transition: color 250ms var(--transition-timing-function);
+            @include transition-min;
         }
     
         &__item-location:hover,

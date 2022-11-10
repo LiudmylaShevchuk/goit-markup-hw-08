@@ -48,7 +48,7 @@
             background-color: #FFFFFF;
             border-radius: 50%;
             color: #AFB1B8;
-            transition: color 250ms var(--transition-timing-function), background-color 250ms var(--transition-timing-function);
+            @include transition-color;
         }
     
         &__network-link:hover,

@@ -9,7 +9,7 @@
             margin-right: 8px;
             border: 2px solid #212121;
             border-radius: 2px;
-            transition: background-color 250ms var(--transition-timing-function), border 250ms var(--transition-timing-function);
+            @include transition-full;
         }
     
         &__icon-accept {

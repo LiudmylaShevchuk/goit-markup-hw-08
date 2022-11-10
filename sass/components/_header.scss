@@ -21,14 +21,9 @@
     &__nav-link {
         color: var(--primery-text-color);
         display: block;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-
         padding: 30px 0;
-        transition: color 250ms var(--transition-timing-function);
+        @include link-decor;
+        @include transition-min;
 
         &--current {
             color: var(--accent-color);

@@ -1,8 +1,20 @@
-.clients__list {
+    
+    
+        .clients {
+    
+    
+
+&__list {
     @extend %grid-setup;
+    @extend %align-center;
+    @extend %justify-center;
+}
+            
+
 
     &__logo {
-            width: calc((100% - 30px) / 6);
+    width: calc((100% - 30px) / 6);
+
         }
     
         &__link {

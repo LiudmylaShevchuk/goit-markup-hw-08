@@ -9,12 +9,8 @@
 
     &__item-link {
         @extend %align-center;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
         @extend %link-decoration;
+        @include link-decor;
     }
 
     &__item-link:hover,

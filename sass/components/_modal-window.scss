@@ -40,7 +40,7 @@
             padding: 11px 12px 11px 42px;
             border: 1px solid rgba(33, 33, 33, 0.2);
             border-radius: 4px;
-            transition: border-color 250ms var(--transition-timing-function);
+            @include transition-border;
             outline: none;
             cursor: pointer;
         }
@@ -56,7 +56,7 @@
             top: 50%;
             transform: translateY(-50%);
             fill: var(--primery-text-color);
-            transition: fill 250ms var(--transition-timing-function);
+            @include transition-icon;
         }
     
         &__input-position:focus-within .modal-window__input-icon {
