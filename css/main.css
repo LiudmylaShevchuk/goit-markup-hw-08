@@ -49,21 +49,27 @@ img {
   text-align: center;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .section {
   padding: 94px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }
 
 .header {
   border-bottom: 1px solid #ECECEC;
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +78,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +86,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header__nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,15 +94,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header__nav-item:not(:last-child) {
   margin-right: 50px;
 }
-
-.header__link-nav {
-  text-decoration: none;
-}
-
 .header__nav-link {
   color: var(--primery-text-color);
   text-decoration: none;
@@ -111,17 +109,10 @@ img {
   -webkit-transition: color 250ms var(--transition-timing-function);
   transition: color 250ms var(--transition-timing-function);
 }
-
-.header__nav-link:hover,
-.header__nav-link:focus {
-  color: var(--accent-color);
-}
-
 .header__nav-link--current {
   color: var(--accent-color);
   position: relative;
 }
-
 .header__nav-link--current::after {
   width: 100%;
   height: 4px;
@@ -131,6 +122,9 @@ img {
   background-color: currentColor;
   border-radius: 2px;
   content: "";
+}
+.header__nav-link:hover, .header__nav-link:focus {
+  color: var(--accent-color);
 }
 
 .contacts {
@@ -999,16 +993,9 @@ img {
   margin-left: 10px;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
