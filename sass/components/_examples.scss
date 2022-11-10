@@ -1,33 +1,28 @@
 .examples {
     padding-top: 0;
+
+    &__cards {
+            @extend %grid-setup;
+            @extend %align-center;
+            justify-content: space-between;
+        }
+    
+        &__card {
+            position: relative;
+        }
+    
+        &__card-text {
+            position: absolute;
+            width: 370px;
+            height: 70px;
+            bottom: 0;
+            margin: 0;
+            padding: 27px 0;
+    
+            @extend %text-uppercase;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: rgba(47, 48, 58, 0.8);
+        }
 }
 
-.examples__cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-}
-
-.examples__card {
-    position: relative;
-}
-
-.examples__card-text {
-    position: absolute;
-    width: 370px;
-    height: 70px;
-    bottom: 0;
-    margin: 0;
-    padding: 27px 0;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-    background-color: rgba(47, 48, 58, 0.8);
-}

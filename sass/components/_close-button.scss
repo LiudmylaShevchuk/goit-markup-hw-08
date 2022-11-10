@@ -1,9 +1,8 @@
 .close-button {
+    @extend %align-center;
+    @extend %justify-center;
     width: 30px;
     height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -13,8 +12,9 @@
     fill: #000000;
     padding: 0;
     cursor: pointer;
+
+    &:hover {
+    fill: var(--accent-color);
+    }
 }
 
-.close-button:hover {
-    fill: var(--accent-color);
-}

@@ -2,18 +2,16 @@
     border-bottom: 1px solid #ECECEC;
 
     &__container {
-        display: flex;
-        justify-content: space-between;
+        @extend %justify-space-between;
     }
 
     &__nav {
-        display: flex;
-        align-items: center;
+        @extend %align-center;
+
     }
 
     &__nav-menu {
-        display: flex;
-        align-items: center;
+        @extend %align-center;
     }
 
     &__nav-item:not(:last-child) {
@@ -22,12 +20,13 @@
 
     &__nav-link {
         color: var(--primery-text-color);
+        display: block;
         text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        display: block;
+
         padding: 30px 0;
         transition: color 250ms var(--transition-timing-function);
 
