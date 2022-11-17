@@ -1,6 +1,7 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
+
     &__container {
         @extend %justify-space-between;
     }
@@ -12,6 +13,13 @@
 
     &__nav-menu {
         @extend %align-center;
+
+    }
+
+    &__burger-menu {
+    @media (min-width: 768px) {
+                display: none;
+        }
     }
 
     &__nav-item:not(:last-child) {
@@ -20,10 +28,14 @@
 
     &__nav-link {
         color: var(--primery-text-color);
-        display: block;
+        display: none;
         padding: 30px 0;
         @include link-decor;
         @include transition-min;
+
+        @media (min-width: 768px) {
+                display: flex;
+            }
 
         &--current {
             color: var(--accent-color);

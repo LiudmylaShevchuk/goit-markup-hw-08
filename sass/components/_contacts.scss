@@ -1,16 +1,31 @@
 .contacts {
     @extend %align-center;
+    display: none;
     justify-content: flex-end;
     margin-left: 318px;
 
+
+    &__item {
+        display: none;
+
+    @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+
     &__item:not(:last-child) {
         margin-right: 50px;
+
+        
     }
 
     &__item-link {
         @extend %align-center;
         @extend %link-decoration;
         @include link-decor;
+
+
     }
 
     &__item-link:hover,
@@ -21,5 +36,6 @@
     &__icon {
         margin-right: 10px;
         fill: currentColor;
+        
     }
 }
