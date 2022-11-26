@@ -1,10 +1,21 @@
 .join-us {
-    margin-left: 70px;
+    margin-bottom: 60px;
+
+    @media (min-width: 1200px) {
+        margin-left: 70px;
+        margin-bottom: 0;
+    }
+    
 
         &__text {
+            text-align: center;
             @extend %text-uppercase;
             color: var(--primery-white-color);
             margin-bottom: 20px;
+
+            @media (min-width: 1200px) {
+            text-align: left;
+            }
         }
     
     

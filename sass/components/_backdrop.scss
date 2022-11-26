@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms, visibility 250ms;
     transform: translate(-50%, -50%);
+    overflow-y: scroll;
 }
 
 .is-hidden {

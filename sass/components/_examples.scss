@@ -1,28 +1,42 @@
 .examples {
-    padding-top: 0;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    &__container {
+
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    // padding-top: 0;
+    }
+    }
+
+
 
     &__cards {
-            @extend %grid-setup;
-            @extend %align-center;
-            justify-content: space-between;
+    @extend %grid-setup;
+    @extend %align-center;
+    justify-content: space-between;
+}
+    
+    &__card {
+    position: relative;
         }
     
-        &__card {
-            position: relative;
+    &__card-text {
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        bottom: 0;
+        margin: 0;
+        padding: 27px 0;
+
+        @extend %text-uppercase;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: rgba(47, 48, 58, 0.8);
         }
     
-        &__card-text {
-            position: absolute;
-            width: 370px;
-            height: 70px;
-            bottom: 0;
-            margin: 0;
-            padding: 27px 0;
-    
-            @extend %text-uppercase;
-            text-align: center;
-            color: #FFFFFF;
-            background-color: rgba(47, 48, 58, 0.8);
-        }
 }
 
