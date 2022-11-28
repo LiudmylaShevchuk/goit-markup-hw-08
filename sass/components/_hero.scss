@@ -1,11 +1,10 @@
 .hero {
-    width: 100%;
-    max-width: 480px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 118px 0;
     background-color: #C4C4C4;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/Header-mobile.jpg);
+        url(../images/Header-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13,38 +12,38 @@
 
     @media (max-width: 767px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Header-mobile.jpg);
+    url(../images/Header-mobile.jpg);
     }
     
     @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Header-mobile@2x.jpg);
+    url(../images/Header-mobile@2x.jpg);
     }
 
     @media (min-width: 768px) {
         max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Header-tablet.jpg);
+    url(../images/Header-tablet.jpg);
     }
 
     @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Header-tablet@2x.jpg);
+    url(../images/Header-tablet@2x.jpg);
     }
 
     @media (min-width: 1200px) {
         max-width: 1600px;
         padding: 200px 0;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/header.jpg);
+        url(../images/header.jpg);
     }
 
     @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/header@2x.jpg.jpg);    
+    url(../images/header@2x.jpg.jpg);    
         }
 
     &__container {

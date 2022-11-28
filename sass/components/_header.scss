@@ -1,6 +1,6 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-padding: 0;
+padding: 10px 0;
 
 &__container {
 @extend %align-center;
@@ -24,7 +24,6 @@ justify-content: space-between;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -32,7 +31,7 @@ justify-content: space-between;
   border-radius: 50%;
   outline: none;
 
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
         display: none;
     }
     }
