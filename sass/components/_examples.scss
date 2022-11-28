@@ -1,5 +1,7 @@
 .examples {
 
+    padding-top: 0;
+
     @media (max-width: 1199px) {
       display: none;
     }
@@ -8,7 +10,6 @@
 
     @media (min-width: 1200px) {
         max-width: 1200px;
-    // padding-top: 0;
     }
     }
 

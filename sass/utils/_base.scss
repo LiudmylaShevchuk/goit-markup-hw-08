@@ -28,14 +28,26 @@ img {
 
 .section-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size:28px;
     line-height: 1.2;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
+
+    @media (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+
 }
 
 .section {
-    max-width: 1600px;
+    padding: 60px 0;
+
+    @media (min-width: 1200px) {
     padding: 94px 0;
+}
+
+
 }
 

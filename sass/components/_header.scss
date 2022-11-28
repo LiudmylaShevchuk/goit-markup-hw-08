@@ -1,19 +1,15 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-padding: 10px 0;
 
 &__container {
 @extend %align-center;
 justify-content: space-between;
 
 @media (min-width: 480px) {
-    width: 480px;
-    display: flex;
 }
 
 @media (min-width: 768px) {
     max-width: 768px;
-    display: flex;
 }
 }
 

@@ -1,10 +1,8 @@
 .team {
-    padding: 60px 0;
     background-color: var(--secondary-background-color);
 
     @media (min-width: 1200px) {
-    padding: 0;
-    padding-bottom: 94px;
+    padding: 94px 0;
     }
 
 &__container {
@@ -18,10 +16,16 @@ width: 100%;
 &__title {
 display: block;
 font-weight: 700;
-font-size: 36px;
+font-size: 28px;
 line-height: 1.2;
-margin-bottom: 50px;
+margin-bottom: 30px;
 text-align: center;
+
+@media (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+    }
+
 }
         
     
@@ -45,7 +49,6 @@ text-align: center;
 
 &__card {
     width: 100%;
-    // width: 270px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;

@@ -5,7 +5,6 @@
 
     &__container {
 
-    display: block;
 
 
 @media (min-width: 768px) {
@@ -22,7 +21,17 @@ justify-content: space-around;
 display: flex;
 flex-wrap: nowrap;
 align-items: baseline;
-}  
+}
+
+}
+
+&__top {
+margin-bottom: 60px;
+
+@media (min-width: 1200px) {
+margin-bottom: 0;
+}
+}
     
 }
 
@@ -30,7 +39,6 @@ align-items: baseline;
 .footer-contacts {
     font-style: normal;
     margin-top: 28px;
-    margin-bottom: 60px;
     text-align: center;
 
    @media (min-width: 1200px) {
@@ -73,4 +81,3 @@ align-items: baseline;
         }
 }
 
-}
